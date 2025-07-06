@@ -4,12 +4,18 @@ project(PROYECTO2)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(main
-        src/probando.cpp
-        src/nn_loss.h
-        src/nn_optimizer.h
-        src/neural_network.h
-        src/nn_activation.h
-        src/nn_dense.h
-        src/nn_interfaces.h
-        src/tensor.h
+        tests/test_tensor.cpp
+        tests/test_neural_network.cpp
+        tests/test_agent_env.cpp
+        src/utec/agent/PongAgent.cpp
+        src/utec/agent/EnvGym.cpp
+        include/utec/algebra/tensor.h
+        include/utec/nn/layer.h
+        include/utec/nn/dense.h
+        include/utec/nn/activation.h
+        include/utec/nn/loss.h
+        include/utec/nn/neural_network.h
+        include/utec/nn/optimization.h
+        include/utec/agent/PongAgent.h
+        include/utec/agent/EnvGym.h        
 )

@@ -27,7 +27,7 @@
 * **Integrantes**:
 
   * Anthony Yair Caypane Ramirez – 202410690 (Responsable de investigación teórica)
-  * Luciano Gabriel Rivera Valentin – 209900002 (Desarrollo de la arquitectura)
+  * Luciano Gabriel Rivera Valentin – 202410149 (Desarrollo de la arquitectura)
   * Luis Joaquín Tangüis Ayllón – 202410755 (Implementación del modelo)
   * Alumno D – 209900004 (Pruebas y benchmarking)
   * Alumno E – 209900005 (Documentación y demo)

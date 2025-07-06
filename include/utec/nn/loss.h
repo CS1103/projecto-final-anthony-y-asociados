@@ -1,9 +1,9 @@
 #ifndef UTEC_NN_LOSS_H
 #define UTEC_NN_LOSS_H
 
-#include "nn_interfaces.h"
+#include "layer.h"
 #include <cmath>
-#include "nn_loss.h"
+#include "loss.h"
 using utec::algebra::Tensor;
 namespace utec::neural_network {
 

@@ -23,16 +23,14 @@
 ### Datos generales
 
 * **Tema**: Redes Neuronales en AI
-* **Grupo**: `group_3_custom_name`
+* **Grupo**: Anthony y Asociados
 * **Integrantes**:
 
-  * Alumno A – 209900001 (Responsable de investigación teórica)
-  * Alumno B – 209900002 (Desarrollo de la arquitectura)
-  * Alumno C – 209900003 (Implementación del modelo)
+  * Anthony Yair Caypane Ramirez – 209900001 (Responsable de investigación teórica)
+  * Luciano Gabriel Rivera Valentin – 209900002 (Desarrollo de la arquitectura)
+  * Luis Joaquín Tangüis Ayllón – 202410755 (Implementación del modelo)
   * Alumno D – 209900004 (Pruebas y benchmarking)
   * Alumno E – 209900005 (Documentación y demo)
-
-> *Nota: Reemplazar nombres y roles reales.*
 
 ---
 
@@ -159,6 +157,6 @@
 
 ### Licencia
 
-Este proyecto usa la licencia **MIT**. Ver [LICENSE](LICENSE) para detalles.
+Este proyecto usa la licencia **GPLv3**. Ver [LICENSE](LICENSE) para detalles.
 
 ---

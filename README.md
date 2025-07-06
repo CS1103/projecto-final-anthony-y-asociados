@@ -26,7 +26,7 @@
 * **Grupo**: Anthony y Asociados
 * **Integrantes**:
 
-  * Anthony Yair Caypane Ramirez – 209900001 (Responsable de investigación teórica)
+  * Anthony Yair Caypane Ramirez – 202410690 (Responsable de investigación teórica)
   * Luciano Gabriel Rivera Valentin – 209900002 (Desarrollo de la arquitectura)
   * Luis Joaquín Tangüis Ayllón – 202410755 (Implementación del modelo)
   * Alumno D – 209900004 (Pruebas y benchmarking)

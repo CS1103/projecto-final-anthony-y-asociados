@@ -1,7 +1,7 @@
 #ifndef UTEC_NN_OPTIMIZER_H
 #define UTEC_NN_OPTIMIZER_H
 
-#include "nn_interfaces.h"
+#include "layer.h"
 #include <unordered_map>
 #include <cmath>
 

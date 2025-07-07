@@ -7,14 +7,11 @@
 using namespace utec::neural_network;
 
 TEST_CASE("PongAgent actúa coherentemente") {
-    auto capa = make_unique<Dense<float>>(3,1,
-        [](auto& W){
-            W.fill(0.0f);
-            W(1,0)=10.0f;
-        },
+    auto capa = std::make_unique<Dense<float>>(3,1,
+        [](auto& W){ W.fill(0.0f); W(1,0)=10.0f; },
         [](auto& b){ b.fill(-5.0f); });
 
-    PongAgent<float> agente(move(capa));
+    PongAgent<float> agente(std::move(capa));
 
     SECTION("bola arriba") {
         Estado e{0.5f,0.9f,0.3f};
@@ -28,12 +25,9 @@ TEST_CASE("PongAgent actúa coherentemente") {
 
 TEST_CASE("EnvGym rebota y termina") {
     EnvGym env;
-    float recompensa; bool fin;
+    float r; bool fin;
     auto s = env.reset();
-
-    for (int step=0; step<500 && !fin; ++step) {
-        s = env.step(0,recompensa,fin);
-    }
-    REQUIRE(fin == true);
-    REQUIRE((recompensa == 1.0f || recompensa == -1.0f));
+    for(int t=0;t<500 && !fin;++t) s = env.step(0,r,fin);
+    REQUIRE(fin);
+    REQUIRE((r==1.0f || r==-1.0f));
 }

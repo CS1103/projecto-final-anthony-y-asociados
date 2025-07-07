@@ -25,9 +25,10 @@ TEST_CASE("Broadcast + operador *") {
 TEST_CASE("matrix_product 2×2") {
     Tensor<float,2> A({2,2});
     Tensor<float,2> B({2,2});
-    A = {1,2,3,4};      // row-major
+    A = {1,2,3,4};
     B = {5,6,7,8};
     auto C = utec::algebra::matrix_product(A,B);
-    REQUIRE(C(0,0) == Approx(19));
-    REQUIRE(C(1,1) == Approx(50));
+    REQUIRE(C(0,0) == Catch::Approx(19));
+    REQUIRE(C(1,1) == Catch::Approx(50));
 }
+

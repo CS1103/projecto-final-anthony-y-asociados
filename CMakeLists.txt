@@ -9,7 +9,7 @@ add_executable(main
         # tests/test_agent_env.cpp
         src/utec/agent/PongAgent.cpp
         src/utec/agent/EnvGym.cpp
-        include/utec/algebra/tensor.h
+        include/utec/algebra/Tensor.h
         include/utec/nn/layer.h
         include/utec/nn/dense.h
         include/utec/nn/activation.h

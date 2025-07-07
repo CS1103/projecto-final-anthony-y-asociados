@@ -1,5 +1,5 @@
 #define CATCH_CONFIG_MAIN
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 #include "../include/utec/agent/PongAgent.h"
 #include "../include/utec/agent/EnvGym.h"
 #include "../include/utec/nn/dense.h"

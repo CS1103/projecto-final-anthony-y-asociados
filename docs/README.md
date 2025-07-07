@@ -70,49 +70,43 @@
 * **Patrones de diseño**: ejemplo: Factory para capas, Strategy para optimizadores.
 * **Estructura de carpetas**:
 
-  ```
 .
 ├── CMakeLists.txt
 ├── docs
-│   ├── BIBLIOGRAFIA.md
-│   ├── LICENSE
-│   └── README.md
-
+│   ├── BIBLIOGRAFIA.md
+│   ├── LICENSE
+│   └── README.md
 ├── include
-│   └── utec
-│       ├── agent
-│       │   ├── EnvGym.h
-│       │   └── PongAgent.h
-│       ├── algebra
-│       │   └── Tensor.h
-│       ├── nn
-│       │   ├── activation.h
-│       │   ├── dense.h
-│       │   ├── layer.h
-│       │   ├── loss.h
-│       │   ├── neural_network.h
-│       │   └── optimizer.h
-│       └── threading
-│           └── ThreadPool.h
-
+│   └── utec
+│       ├── agent
+│       │   ├── EnvGym.h
+│       │   └── PongAgent.h
+│       ├── algebra
+│       │   └── Tensor.h
+│       ├── nn
+│       │   ├── activation.h
+│       │   ├── dense.h
+│       │   ├── layer.h
+│       │   ├── loss.h
+│       │   ├── neural_network.h
+│       │   └── optimizer.h
+│       └── threading
+│           └── ThreadPool.h
 ├── src
-│   ├── bench
-│   │   ├── bench_seq.cpp
-│   │   └── bench_thread.cpp
-│   ├── main.cpp
-│   └── utec
-│       ├── agent
-│       │   ├── EnvGym.cpp
-│       │   └── PongAgent.cpp
-│       └── threading
-│           └── ThreadPool.cpp
-
+│   ├── bench
+│   │   ├── bench_seq.cpp
+│   │   └── bench_thread.cpp
+│   ├── main.cpp
+│   └── utec
+│       ├── agent
+│       │   ├── EnvGym.cpp
+│       │   └── PongAgent.cpp
+│       └── threading
+│           └── ThreadPool.cpp
 ├── tests
-│   ├── test_agent_env.cpp
-│   ├── test_neural_network.cpp
-│   └── test_tensor.cpp
-
-  ```
+    ├── test_agent_env.cpp
+    ├── test_neural_network.cpp
+    └── test_tensor.cpp
 
 #### 2.2 Manual de uso y casos de prueba
 

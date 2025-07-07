@@ -71,12 +71,14 @@
 * **Estructura de carpetas**:
 
   ```
-.
+  .
 ├── CMakeLists.txt
+
 ├── docs
 │   ├── BIBLIOGRAFIA.md
 │   ├── LICENSE
 │   └── README.md
+
 ├── include
 │   └── utec
 │       ├── agent
@@ -93,6 +95,7 @@
 │       │   └── optimizer.h
 │       └── threading
 │           └── ThreadPool.h
+
 ├── src
 │   ├── bench
 │   │   ├── bench_seq.cpp
@@ -104,10 +107,11 @@
 │       │   └── PongAgent.cpp
 │       └── threading
 │           └── ThreadPool.cpp
+
 ├── tests
-    ├── test_agent_env.cpp
-    ├── test_neural_network.cpp
-    └── test_tensor.cpp
+│   ├── test_agent_env.cpp
+│   ├── test_neural_network.cpp
+│   └── test_tensor.cpp
 
   ```
 

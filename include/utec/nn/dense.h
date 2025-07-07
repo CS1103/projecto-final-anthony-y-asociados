@@ -1,7 +1,7 @@
 #ifndef UTEC_NN_DENSE_H
 #define UTEC_NN_DENSE_H
 
-#include "interfaces.h"
+#include "layer.h"
 #include <memory>
 
 using utec::algebra::Tensor;

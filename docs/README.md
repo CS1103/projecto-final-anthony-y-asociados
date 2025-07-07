@@ -27,10 +27,8 @@
 * **Integrantes**:
 
   * Anthony Yair Caypane Ramirez – 202410690 (Responsable de investigación teórica)
-  * Luciano Gabriel Rivera Valentin – 202410149 (Desarrollo de la arquitectura)
+  * Luciano Gabriel Rivera Valentin – 202410149 (Documentación y demo)
   * Luis Joaquín Tangüis Ayllón – 202410755 (Implementación del modelo)
-  * Alumno D – 209900004 (Pruebas y benchmarking)
-  * Alumno E – 209900005 (Documentación y demo)
 
 ---
 
@@ -41,19 +39,17 @@
 
    * CMake 3.18+
    * Eigen 3.4
-   * \[Otra librería opcional]
+   * Catch2 3.5.2
 3. **Instalación**:
 
    ```bash
-   git clone https://github.com/EJEMPLO/proyecto-final.git
-   cd proyecto-final
+   git clone https://github.com/CS1103/proyecto-final-anthony-y-asociados.git
+   cd proyecto-final-anthony-y-asociados
    mkdir build && cd build
    cmake ..
    make
    ```
-
-> *Ejemplo de repositorio y comandos, ajustar según proyecto.*
-
+   
 ---
 
 ### 1. Investigación teórica
@@ -72,16 +68,47 @@
 #### 2.1 Arquitectura de la solución
 
 * **Patrones de diseño**: ejemplo: Factory para capas, Strategy para optimizadores.
-* **Estructura de carpetas (ejemplo)**:
+* **Estructura de carpetas**:
 
   ```
-  proyecto-final/
-  ├── src/
-  │   ├── layers/
-  │   ├── optimizers/
-  │   └── main.cpp
-  ├── tests/
-  └── docs/
+.
+├── CMakeLists.txt
+├── docs
+│   ├── BIBLIOGRAFIA.md
+│   ├── LICENSE
+│   └── README.md
+├── include
+│   └── utec
+│       ├── agent
+│       │   ├── EnvGym.h
+│       │   └── PongAgent.h
+│       ├── algebra
+│       │   └── Tensor.h
+│       ├── nn
+│       │   ├── activation.h
+│       │   ├── dense.h
+│       │   ├── layer.h
+│       │   ├── loss.h
+│       │   ├── neural_network.h
+│       │   └── optimizer.h
+│       └── threading
+│           └── ThreadPool.h
+├── src
+│   ├── bench
+│   │   ├── bench_seq.cpp
+│   │   └── bench_thread.cpp
+│   ├── main.cpp
+│   └── utec
+│       ├── agent
+│       │   ├── EnvGym.cpp
+│       │   └── PongAgent.cpp
+│       └── threading
+│           └── ThreadPool.cpp
+├── tests
+    ├── test_agent_env.cpp
+    ├── test_neural_network.cpp
+    └── test_tensor.cpp
+
   ```
 
 #### 2.2 Manual de uso y casos de prueba

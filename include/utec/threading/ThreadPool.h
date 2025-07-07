@@ -11,13 +11,6 @@
 
 namespace utec::threading {
 
-/*---------------------------------------------------------------
-  ThreadPool
-  ---------------------------------------------------------------
-  ▸ Construye N hilos persistentes que consumen tareas.
-  ▸ submit(f, args…) devuelve std::future<ret>.
-  ▸ size()           devuelve nº de hilos.
-----------------------------------------------------------------*/
 class ThreadPool {
 private:
     std::vector<std::thread>              _workers;
@@ -32,7 +25,6 @@ public:
 
     std::size_t size() const noexcept;
 
-    /---------------- submit: plantilla inline ----------------/
     template <typename F, typename... Args>
     auto submit(F&& f, Args&&... args)
         -> std::future<std::invoke_result_t<F, Args...>>

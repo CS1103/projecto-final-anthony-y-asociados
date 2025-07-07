@@ -1,7 +1,7 @@
 #ifndef UTEC_NN_INTERFACES_H
 #define UTEC_NN_INTERFACES_H
 
-#include "Tensor.h"
+#include "../algebra/Tensor.h"
 using utec::algebra::Tensor;
 
 namespace utec::neural_network {

@@ -25,4 +25,3 @@ int main() {
     std::cout << "Secuencial  : " << ms << " ms\n";
     std::cout << "Y(0,0) = " << Y(0,0) << "\n";
 }
-bench_seq.cpp

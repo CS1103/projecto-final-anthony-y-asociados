@@ -1,7 +1,7 @@
 #ifndef UTEC_AGENT_PONGAGENT_H
 #define UTEC_AGENT_PONGAGENT_H
 
-#include "../nn/nn_interfaces.h"
+#include "../nn/layer.h"
 #include <memory>
 
 using namespace std;

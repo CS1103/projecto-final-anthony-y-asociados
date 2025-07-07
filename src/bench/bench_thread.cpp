@@ -59,4 +59,3 @@ int main() {
     std::cout << "ThreadPool x4: " << ms << " ms\n";
     std::cout << "Y(0,0) = " << Y(0,0) << "\n";
 }
-bench_thread.cpp (con ThreadPool)

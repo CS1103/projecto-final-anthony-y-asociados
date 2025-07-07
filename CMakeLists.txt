@@ -43,7 +43,7 @@ FetchContent_MakeAvailable(Catch2)
 
 enable_testing()
 file(GLOB_RECURSE TEST_SRC "tests/*.cpp")
-add_executable(tests ${TEST_SRC})
-target_link_libraries(tests PRIVATE Catch2::Catch2WithMain ponglib)
+add_executable(unit_tests ${TEST_SRC})
+target_link_libraries(unit_tests PRIVATE Catch2::Catch2WithMain ponglib)
 
-add_test(NAME all_tests COMMAND tests)
+add_test(NAME all_tests COMMAND unit_tests)

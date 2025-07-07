@@ -1,5 +1,5 @@
 #define CATCH_CONFIG_MAIN
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 #include "../include/utec/nn/neural_network.h"
 #include "../include/utec/nn/activation.h"
 #include "../include/utec/nn/dense.h"

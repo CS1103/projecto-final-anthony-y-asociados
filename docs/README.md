@@ -85,33 +85,13 @@ projecto-final-anthony-y-asociados/
 │       |   └── PongAgent.h
 │       ├── algebra
 │       |   └── Tensor.h
-
-pong_ai /
-+-- include / # cabeceras principales
-| +-- utec /
-| +-- algebra / # á lgebra : implementa Tensor <T , Rank >
-| | +-- Tensor .h
-| +-- nn / # red neuronal : define capas y NeuralNetwork
-| | +-- layer .h
-| | +-- dense .h
-| | +-- activation .h
-| | +-- loss .h
-| | +-- neural_network .h
-| +-- agent / # agente y entorno : PongAgent y EnvGym
-| +-- PongAgent .h
-| +-- EnvGym .h
-+-- src / # archivos fuentes ( si se requiriera )
-| +-- utec /
-| +-- agent / # agente y entorno : PongAgent y EnvGym
-| +-- PongAgent . cpp
-| +-- EnvGym . cpp
-+-- tests / # casos de prueba automatizados para Gradescope
-| +-- test_tensor . cpp
-| +-- test_neural_network . cpp
-| +-- test_agent_env . cpp
-+-- docs / # documentaci ón del proyecto y bibliograf ía
-+-- README . md
-+-- BIBLIOGRAFIA . md
+│       ├── nn
+│       │   ├── activation.h
+│       │   ├── dense.h
+│       │   ├── layer.h
+│       │   ├── loss.h
+│       │   ├── neural_network.h
+│       │   └── optimizer.h
 
 ```
 

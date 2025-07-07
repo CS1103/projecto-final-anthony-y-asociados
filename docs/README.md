@@ -156,15 +156,11 @@ projecto-final-anthony-y-asociados/
 
 ### 5. Trabajo en equipo
 
-| Tarea                     | Miembro  | Rol                       |
-| ------------------------- | -------- | ------------------------- |
-| Investigación teórica     | Alumno A | Documentar bases teóricas |
-| Diseño de la arquitectura | Alumno B | UML y esquemas de clases  |
-| Implementación del modelo | Alumno C | Código C++ de la NN       |
-| Pruebas y benchmarking    | Alumno D | Generación de métricas    |
-| Documentación y demo      | Alumno E | Tutorial y video demo     |
-
-> *Actualizar con tareas y nombres reales.*
+| Tarea                     | Miembro                         | Rol                        |
+| ------------------------- | ------------------------------- | -------------------------- |
+| Investigación teórica     | Anthony Yair Caypane Ramirez    | Documentar bases teóricas  |
+| Investigación teórica     | Luciano Gabriel Rivera Valentin | Documentación y demo       |
+| Investigación teórica     | Luis Joaquín Tangüis Ayllón     | Documentación y demo       |
 
 ---
 

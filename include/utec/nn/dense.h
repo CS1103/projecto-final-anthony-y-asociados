@@ -9,7 +9,7 @@ using utec::algebra::Tensor;
 namespace utec::neural_network {
 
   template <typename T>
-  class Dense final : public ILayer<T> {
+  class Dense : public ILayer<T> {
   private:
     Tensor<T,2> W, dW;
     Tensor<T,2> b, db;

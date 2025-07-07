@@ -43,8 +43,8 @@
 3. **Instalación**:
 
    ```bash
-   git clone https://github.com/CS1103/proyecto-final-anthony-y-asociados.git
-   cd proyecto-final-anthony-y-asociados
+   git clone https://github.com/CS1103/projecto-final-anthony-y-asociados.git
+   cd projecto-final-anthony-y-asociados
    mkdir build && cd build
    cmake ..
    make
@@ -72,13 +72,46 @@
 
 ```
 
-proyecto-final/
-├── src/
-│   ├── layers/
-│   ├── optimizers/
-│   └── main.cpp
-├── tests/
-└── docs/
+projecto-final-anthony-y-asociados/
+├── CMakeLists.txt
+├── docs
+│   ├── BIBLIOGRAFIA.md
+│   ├── LICENSE
+│   └── README.md
+├── include
+|   └── utec
+│       ├── agent
+│       |   ├── EnvGym.h
+│       |   └── PongAgent.h
+│       ├── algebra
+│       |   └── Tensor.h
+
+pong_ai /
++-- include / # cabeceras principales
+| +-- utec /
+| +-- algebra / # á lgebra : implementa Tensor <T , Rank >
+| | +-- Tensor .h
+| +-- nn / # red neuronal : define capas y NeuralNetwork
+| | +-- layer .h
+| | +-- dense .h
+| | +-- activation .h
+| | +-- loss .h
+| | +-- neural_network .h
+| +-- agent / # agente y entorno : PongAgent y EnvGym
+| +-- PongAgent .h
+| +-- EnvGym .h
++-- src / # archivos fuentes ( si se requiriera )
+| +-- utec /
+| +-- agent / # agente y entorno : PongAgent y EnvGym
+| +-- PongAgent . cpp
+| +-- EnvGym . cpp
++-- tests / # casos de prueba automatizados para Gradescope
+| +-- test_tensor . cpp
+| +-- test_neural_network . cpp
+| +-- test_agent_env . cpp
++-- docs / # documentaci ón del proyecto y bibliograf ía
++-- README . md
++-- BIBLIOGRAFIA . md
 
 ```
 

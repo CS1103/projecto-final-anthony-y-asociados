@@ -8,36 +8,44 @@ using namespace utec::threading;
 using reloj = std::chrono::high_resolution_clock;
 
 template <typename T>
-class DenseParalela : public Dense<T> {
+class DenseParalela {
+    Dense<T> capa_base;
+    std::size_t out_feats;
     static ThreadPool pool;
 public:
-    using Dense<T>::Dense;
+    template <typename InitW, typename InitB>
+    DenseParalela(std::size_t in_f, std::size_t out_f,
+                  InitW initW, InitB initB)
+        : capa_base(in_f, out_f, initW, initB), out_feats(out_f) {}
 
-    Tensor<T,2> forward(const Tensor<T,2>& X) override {
+    Tensor<T,2> forward(const Tensor<T,2>& X) {
         const std::size_t lote  = X.shape()[0];
         const std::size_t chunk = (lote + pool.size()-1)/pool.size();
-        Tensor<T,2> out({lote, this->b.shape()[1]});
-        std::vector<std::future<void>> futs;
+        Tensor<T,2> out({lote, out_feats});
 
+        std::vector<std::future<void>> futs;
         for (std::size_t i = 0; i < lote; i += chunk) {
-            std::size_t i_fin = std::min(i + chunk, lote);
-            futs.push_back(pool.submit([&,i,i_fin]{
-                Tensor<T,2> sub({i_fin-i, X.shape()[1]});
-                for(std::size_t r=i; r<i_fin; ++r)
-                    for(std::size_t c=0;c<X.shape()[1];++c)
-                        sub(r-i,c)=X(r,c);
-                auto parc = Dense<T>::forward(sub);
-                for(std::size_t r=i; r<i_fin; ++r)
-                    for(std::size_t c=0;c<parc.shape()[1];++c)
-                        out(r,c)=parc(r-i,c);
+            std::size_t fin = std::min(i + chunk, lote);
+            futs.push_back(pool.submit([&,i,fin]{
+                Tensor<T,2> sub({fin-i, X.shape()[1]});
+                for (std::size_t r=i; r<fin; ++r)
+                    for (std::size_t c=0; c<X.shape()[1]; ++c)
+                        sub(r-i,c) = X(r,c);
+
+                auto parc = capa_base.forward(sub);
+
+                for (std::size_t r=i; r<fin; ++r)
+                    for (std::size_t c=0; c<out_feats; ++c)
+                        out(r,c) = parc(r-i,c);
             }));
         }
-        for(auto& f:futs) f.get();
+        for (auto& f : futs) f.get();
         return out;
     }
 };
-/* define pool (4 hilos) */
-template<typename T> ThreadPool DenseParalela<T>::pool(4);
+
+template <typename T>
+ThreadPool DenseParalela<T>::pool(4);
 
 int main() {
     constexpr std::size_t batch = 10'000;

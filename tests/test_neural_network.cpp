@@ -1,10 +1,8 @@
-#define CATCH_CONFIG_MAIN
 #include <catch2/catch_all.hpp>
 #include "../include/utec/nn/neural_network.h"
 #include "../include/utec/nn/activation.h"
 #include "../include/utec/nn/dense.h"
 #include "../include/utec/nn/loss.h"
-#include "../include/utec/nn/optimizer.h"
 
 using namespace utec::neural_network;
 
@@ -28,5 +26,5 @@ TEST_CASE("Entrena XOR en < 0.2 loss") {
 
     auto preds = net.predict(X);
     float loss = MSELoss<T,2>(preds,Y).loss();
-    REQUIRE(loss < Catch::Approx(0.2f));
+    REQUIRE(loss < 0.2f);
 }

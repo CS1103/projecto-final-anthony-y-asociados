@@ -71,9 +71,8 @@
 * **Estructura de carpetas**:
 
   ```
-  .
+.
 ├── CMakeLists.txt
-
 ├── docs
 │   ├── BIBLIOGRAFIA.md
 │   ├── LICENSE

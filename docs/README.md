@@ -4,7 +4,7 @@
 
 ### **Descripción**
 
-> Ejemplo: Implementación de una red neuronal multicapa en C++ para clasificación de dígitos manuscritos.
+Este proyecto consiste en la implementación de una red neuronal multicapa en C++ para controlar un agente que juega una versión simplificada del juego Pong. Se desarrolla un entorno simulado (`EnvGym`) donde la posición de la bola y la paleta se actualizan en tiempo real, y un agente (`PongAgent`) toma decisiones sobre el movimiento usando una red neuronal implementada desde cero.
 
 ### Contenidos
 
@@ -30,6 +30,9 @@
   * Luciano Gabriel Rivera Valentin – 202410149 (Documentación y demo)
   * Luis Joaquín Tangüis Ayllón – 202410755 (Implementación del modelo)
 
+* **Curso**: CC3101 - Programación III
+* **Nombre del profesor:** Ruben Rivas.
+
 ---
 
 ### Requisitos e instalación
@@ -54,12 +57,18 @@
 
 ### 1. Investigación teórica
 
-* **Objetivo**: Explorar fundamentos y arquitecturas de redes neuronales.
-* **Contenido de ejemplo**:
+* **Objetivo**: Explorar fundamentos y arquitecturas de redes neuronales artificiales aplicadas a toma de decisiones.
+* **Contenido del proyecto**:
 
-  1. Historia y evolución de las NNs.
-  2. Principales arquitecturas: MLP, CNN, RNN.
-  3. Algoritmos de entrenamiento: backpropagation, optimizadores.
+* Las redes neuronales artificiales (ANN) son sistemas computacionales inspirados en las redes biológicas del cerebro.
+
+* Este proyecto implementa un perceptrón multicapa (MLP) con una función de activación ReLU y una capa de salida softmax.
+
+* Se utiliza el algoritmo de retropropagación (backpropagation) para ajustar los pesos, basado en el gradiente descendente.
+
+* El agente decide sus acciones basándose en el estado del entorno (posición de la bola y paleta).
+
+* Este enfoque forma parte del campo de aprendizaje por refuerzo, aunque aquí no se incluye el proceso de entrenamiento completo.
 
 ---
 
@@ -67,7 +76,9 @@
 
 #### 2.1 Arquitectura de la solución
 
-* **Patrones de diseño**: ejemplo: Factory para capas, Strategy para optimizadores.
+* **Diseño modular** usando clases como EnvGym, PongAgent, y capas de red neuronal (Dense, Activation, Loss).
+
+
 * **Estructura de carpetas**:
 
 ```
@@ -128,6 +139,7 @@ projecto-final-anthony-y-asociados/
 ### 3. Ejecución
 
 > **Demo de ejemplo**: Video/demo alojado en `docs/demo.mp4`.
+* Al ejecutar el binario principal, se simula un entorno Pong donde el agente toma decisiones de movimiento. La salida se presenta por consola indicando el estado del entorno y la acción tomada por el agente.
 > Pasos:
 >
 > 1. Preparar datos de entrenamiento (formato CSV).
@@ -138,19 +150,25 @@ projecto-final-anthony-y-asociados/
 
 ### 4. Análisis del rendimiento
 
-* **Métricas de ejemplo**:
+* **Estado actual:**
 
-  * Iteraciones: 1000 épocas.
-  * Tiempo total de entrenamiento: 2m30s.
-  * Precisión final: 92.5%.
-* **Ventajas/Desventajas**:
+* El sistema responde en tiempo real y ejecuta decisiones por cuadros.
 
-  * * Código ligero y dependencias mínimas.
-  * – Sin paralelización, rendimiento limitado.
-* **Mejoras futuras**:
+* No se realiza entrenamiento completo; el modelo funciona con pesos inicializados.
 
-  * Uso de BLAS para multiplicaciones (Justificación).
-  * Paralelizar entrenamiento por lotes (Justificación).
+**Limitaciones:**
+
+* No hay paralelización.
+
+* No se aplica retropropagación sobre múltiples partidas.
+
+**Futuras mejoras:**
+
+* Entrenar con refuerzo profundo (DQN).
+
+* Agregar visualización o exportación a CSV.
+
+* Optimización con librerías BLAS o multithreading en capa dense.
 
 ---
 
@@ -166,18 +184,25 @@ projecto-final-anthony-y-asociados/
 
 ### 6. Conclusiones
 
-* **Logros**: Implementar NN desde cero, validar en dataset de ejemplo.
-* **Evaluación**: Calidad y rendimiento adecuados para propósito académico.
-* **Aprendizajes**: Profundización en backpropagation y optimización.
-* **Recomendaciones**: Escalar a datasets más grandes y optimizar memoria.
+* El proyecto permitió comprender a fondo cómo funcionan las redes neuronales a bajo nivel.
+
+* Se logró una integración completa entre un entorno simulado y un agente inteligente.
+
+* Quedaron como retos el entrenamiento real y el análisis visual, pero el objetivo académico se cumplió con éxito.
+
+* Se reforzaron habilidades en programación modular, CMake y pruebas unitaria
 
 ---
 
 ### 7. Bibliografía
 
-> *Actualizar con bibliografia utilizada, al menos 4 referencias bibliograficas y usando formato IEEE de referencias bibliograficas.*
+>[1] Y. LeCun, Y. Bengio y G. Hinton, "Deep learning", Nature, vol. 521, no. 7553, pp. 436–444, 2015.
+>[2] I. Goodfellow, Y. Bengio, A. Courville, Deep Learning, MIT Press, 2016.
+>3] M. Nielsen, Neural Networks and Deep Learning, Determination Press, 2015.
+>[4] Documentación de Eigen C++: https://eigen.tuxfamily.org
+>[5] Documentación de Catch2: https://github.com/catchorg/Catch2
 
----
+
 
 ### Licencia
 

@@ -196,11 +196,11 @@ projecto-final-anthony-y-asociados/
 
 ### 7. Bibliografía
 
->[1] Y. LeCun, Y. Bengio y G. Hinton, "Deep learning", Nature, vol. 521, no. 7553, pp. 436–444, 2015.
->[2] I. Goodfellow, Y. Bengio, A. Courville, Deep Learning, MIT Press, 2016.
->3] M. Nielsen, Neural Networks and Deep Learning, Determination Press, 2015.
->[4] Documentación de Eigen C++: https://eigen.tuxfamily.org
->[5] Documentación de Catch2: https://github.com/catchorg/Catch2
+* >[1] Y. LeCun, Y. Bengio y G. Hinton, "Deep learning", Nature, vol. 521, no. 7553, pp. 436–444, 2015.
+* >[2] I. Goodfellow, Y. Bengio, A. Courville, Deep Learning, MIT Press, 2016.
+* >3] M. Nielsen, Neural Networks and Deep Learning, Determination Press, 2015.
+* >[4] Documentación de Eigen C++: https://eigen.tuxfamily.org
+* >[5] Documentación de Catch2: https://github.com/catchorg/Catch2
 
 
 

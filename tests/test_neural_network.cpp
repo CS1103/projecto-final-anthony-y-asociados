@@ -22,7 +22,7 @@ TEST_CASE("Entrena XOR en < 0.2 loss") {
         [](auto& W){ W.fill(0.5f); },
         [](auto& b){ b.fill(0.0f); }));
 
-    net.train<MSELoss>(X,Y,1000,4,0.1f);
+    net.train<MSELoss>(X,Y,10000,4,0.05f);
 
     auto preds = net.predict(X);
     float loss = MSELoss<T,2>(preds,Y).loss();

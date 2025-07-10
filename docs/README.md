@@ -8,16 +8,16 @@ Este proyecto consiste en la implementación de una red neuronal multicapa en C+
 
 ### Contenidos
 
-1. [Datos generales](#datos-generales)
-2. [Requisitos e instalación](#requisitos-e-instalación)
-3. [Investigación teórica](#1-investigación-teórica)
-4. [Diseño e implementación](#2-diseño-e-implementación)
-5. [Ejecución](#3-ejecución)
-6. [Análisis del rendimiento](#4-análisis-del-rendimiento)
-7. [Trabajo en equipo](#5-trabajo-en-equipo)
-8. [Conclusiones](#6-conclusiones)
-9. [Bibliografía](#7-bibliografía)
-10. [Licencia](#licencia)
+*. [Datos generales](#datos-generales)
+*. [Requisitos e instalación](#requisitos-e-instalación)
+1. [Investigación teórica](#1-investigación-teórica)
+2. [Diseño e implementación](#2-diseño-e-implementación)
+3. [Ejecución](#3-ejecución)
+4. [Análisis del rendimiento](#4-análisis-del-rendimiento)
+5. [Trabajo en equipo](#5-trabajo-en-equipo)
+6. [Conclusiones](#6-conclusiones)
+7. [Bibliografía](#7-bibliografía)
+8. [Licencia](#licencia)
 ---
 
 ### Datos generales
@@ -198,7 +198,7 @@ projecto-final-anthony-y-asociados/
 
 * >[1] Y. LeCun, Y. Bengio y G. Hinton, "Deep learning", Nature, vol. 521, no. 7553, pp. 436–444, 2015.
 * >[2] I. Goodfellow, Y. Bengio, A. Courville, Deep Learning, MIT Press, 2016.
-* >3] M. Nielsen, Neural Networks and Deep Learning, Determination Press, 2015.
+* >[3] M. Nielsen, Neural Networks and Deep Learning, Determination Press, 2015.
 * >[4] Documentación de Eigen C++: https://eigen.tuxfamily.org
 * >[5] Documentación de Catch2: https://github.com/catchorg/Catch2
 

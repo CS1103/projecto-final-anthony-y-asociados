@@ -8,16 +8,16 @@ Este proyecto consiste en la implementación de una red neuronal multicapa en C+
 
 ### Contenidos
 
-*. [Datos generales](#datos-generales)
-*. [Requisitos e instalación](#requisitos-e-instalación)
-1. [Investigación teórica](#1-investigación-teórica)
-2. [Diseño e implementación](#2-diseño-e-implementación)
-3. [Ejecución](#3-ejecución)
-4. [Análisis del rendimiento](#4-análisis-del-rendimiento)
-5. [Trabajo en equipo](#5-trabajo-en-equipo)
-6. [Conclusiones](#6-conclusiones)
-7. [Bibliografía](#7-bibliografía)
-8. [Licencia](#licencia)
+1. [Datos generales](#datos-generales)
+2. [Requisitos e instalación](#requisitos-e-instalación)
+3. [Investigación teórica](#1-investigación-teórica)
+4. [Diseño e implementación](#2-diseño-e-implementación)
+5. [Ejecución](#3-ejecución)
+6. [Análisis del rendimiento](#4-análisis-del-rendimiento)
+7. [Trabajo en equipo](#5-trabajo-en-equipo)
+8. [Conclusiones](#6-conclusiones)
+9. [Bibliografía](#7-bibliografía)
+10. [Licencia](#8-licencia)
 ---
 
 ### Datos generales
@@ -125,7 +125,7 @@ projecto-final-anthony-y-asociados/
 
 #### 2.2 Manual de uso y casos de prueba
 
-* **Cómo ejecutar**: `./build/neural_net_demo input.csv output.csv`
+* **Cómo ejecutar**: `./build/unit_tests`
 * **Casos de prueba**:
 
   * Test unitario de capa densa.
@@ -174,11 +174,11 @@ projecto-final-anthony-y-asociados/
 
 ### 5. Trabajo en equipo
 
-| Tarea                     | Miembro                         | Rol                        |
-| ------------------------- | ------------------------------- | -------------------------- |
-| Investigación teórica     | Anthony Yair Caypane Ramirez    | Documentar bases teóricas  |
-| Investigación teórica     | Luciano Gabriel Rivera Valentin | Documentación y demo       |
-| Investigación teórica     | Luis Joaquín Tangüis Ayllón     | Documentación y demo       |
+| Tarea                     | Miembro                         | Rol                           |
+| ------------------------- | ------------------------------- | ----------------------------- |
+| Investigación teórica     | Anthony Yair Caypane Ramirez    | Documentar bases teóricas     |
+| Diseño de la arquitectura | Luciano Gabriel Rivera Valentin | UML y esquemas de clases      |
+| Implementación del modelo | Luis Joaquín Tangüis Ayllón     | Código C++ de la red neuronal |
 
 ---
 
@@ -190,7 +190,7 @@ projecto-final-anthony-y-asociados/
 
 * Quedaron como retos el entrenamiento real y el análisis visual, pero el objetivo académico se cumplió con éxito.
 
-* Se reforzaron habilidades en programación modular, CMake y pruebas unitaria
+* Se reforzaron habilidades en programación modular, CMake y pruebas unitarias
 
 ---
 
@@ -204,7 +204,7 @@ projecto-final-anthony-y-asociados/
 
 
 
-### Licencia
+### 8. Licencia
 
 Este proyecto usa la licencia **GPLv3**. Ver [LICENSE](LICENSE) para detalles.
 
